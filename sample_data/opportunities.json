@@ -1,0 +1,82 @@
+{
+  "opportunities": [
+    {
+      "id": "opp001",
+      "title": "2026 AI 신입 개발자 공채",
+      "company": "네이버",
+      "type": "정규직",
+      "category": "AI/머신러닝",
+      "required_skills": ["Python", "머신러닝", "데이터분석"],
+      "preferred_skills": ["TensorFlow", "PyTorch", "깃허브활동"],
+      "experience_years": 0,
+      "deadline": "2026-06-30",
+      "salary_range": "3500~4500",
+      "description": "AI 플랫폼 개발 팀에 합류할 신입 개발자를 모집합니다."
+    },
+    {
+      "id": "opp002",
+      "title": "웹 프론트엔드 개발 인턴",
+      "company": "당신의서비스",
+      "type": "인턴십",
+      "category": "웹개발",
+      "required_skills": ["React", "JavaScript", "CSS"],
+      "preferred_skills": ["TypeScript", "테스트코드"],
+      "experience_years": 0,
+      "deadline": "2026-05-31",
+      "salary_range": "15~20만원/월",
+      "description": "React 기반 서비스 개발에 참여할 인턴을 모집합니다."
+    },
+    {
+      "id": "opp003",
+      "title": "데이터 분석가 신입 채용",
+      "company": "당근마켓",
+      "type": "정규직",
+      "category": "데이터분석",
+      "required_skills": ["데이터분석", "SQL", "Python"],
+      "preferred_skills": ["Tableau", "머신러닝", "통계"],
+      "experience_years": 0,
+      "deadline": "2026-07-15",
+      "salary_range": "3200~4000",
+      "description": "데이터 기반 의사결정을 지원할 분석가를 모집합니다."
+    },
+    {
+      "id": "opp004",
+      "title": "2026 대학생 공모전 - 핀테크 앱",
+      "company": "금융감독원",
+      "type": "공모전",
+      "category": "핀테크",
+      "required_skills": ["아이디어", "개발역량", "창의성"],
+      "preferred_skills": ["모바일개발", "보안", "디자인"],
+      "experience_years": 0,
+      "deadline": "2026-08-31",
+      "salary_range": "상금 5000만원",
+      "description": "혁신적인 핀테크 솔루션을 개발하는 팀을 모집합니다."
+    },
+    {
+      "id": "opp005",
+      "title": "사업 개발 매니저(BD) 채용",
+      "company": "쿠팡",
+      "type": "정규직",
+      "category": "비즈니스개발",
+      "required_skills": ["리더십", "소통능력", "전략기획"],
+      "preferred_skills": ["국제업무", "경영분석", "클라이언트관리"],
+      "experience_years": 2,
+      "deadline": "2026-06-15",
+      "salary_range": "4000~5500",
+      "description": "신규 사업 전략 수립 및 실행을 주도할 BD 매니저를 모집합니다."
+    },
+    {
+      "id": "opp006",
+      "title": "UI/UX 디자인 인턴",
+      "company": "토스",
+      "type": "인턴십",
+      "category": "디자인",
+      "required_skills": ["디자인", "UI/UX", "피그마"],
+      "preferred_skills": ["프로토타이핑", "사용자조사", "웹디자인"],
+      "experience_years": 0,
+      "deadline": "2026-05-20",
+      "salary_range": "12~18만원/월",
+      "description": "금융 서비스 UI/UX 디자인에 참여할 인턴을 모집합니다."
+    }
+  ]
+}

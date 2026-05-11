@@ -1,0 +1,106 @@
+{
+  "profiles": [
+    {
+      "id": "user001",
+      "name": "김개발",
+      "education": {
+        "degree": "학사",
+        "major": "컴퓨터공학",
+        "university": "서울대학교",
+        "graduation_year": 2024
+      },
+      "experience": {
+        "years": 0.5,
+        "positions": [
+          {
+            "title": "웹 개발 인턴",
+            "company": "스타트업 A",
+            "duration_months": 6,
+            "skills": ["React", "Node.js", "PostgreSQL"]
+          }
+        ]
+      },
+      "skills": {
+        "programming_languages": ["Python", "JavaScript", "Java"],
+        "frameworks": ["React", "Vue.js", "Django"],
+        "tools": ["Git", "Docker", "AWS"],
+        "databases": ["PostgreSQL", "MongoDB"]
+      },
+      "certifications": [
+        "AWS Certified Cloud Practitioner"
+      ],
+      "interests": [
+        "웹개발",
+        "풀스택",
+        "스타트업"
+      ]
+    },
+    {
+      "id": "user002",
+      "name": "이인공지능",
+      "education": {
+        "degree": "학사",
+        "major": "통계학",
+        "university": "카이스트",
+        "graduation_year": 2025
+      },
+      "experience": {
+        "years": 0,
+        "positions": []
+      },
+      "skills": {
+        "programming_languages": ["Python", "R"],
+        "frameworks": ["TensorFlow", "PyTorch", "scikit-learn"],
+        "tools": ["Jupyter", "Git"],
+        "databases": ["MySQL"]
+      },
+      "certifications": [],
+      "interests": [
+        "머신러닝",
+        "데이터분석",
+        "AI"
+      ]
+    },
+    {
+      "id": "user003",
+      "name": "박매니저",
+      "education": {
+        "degree": "석사",
+        "major": "경영학",
+        "university": "연세대학교",
+        "graduation_year": 2021
+      },
+      "experience": {
+        "years": 3,
+        "positions": [
+          {
+            "title": "프로젝트 매니저",
+            "company": "대기업 B",
+            "duration_months": 24,
+            "skills": ["리더십", "협업", "일정관리"]
+          },
+          {
+            "title": "비즈니스 분석가",
+            "company": "컨설팅회사 C",
+            "duration_months": 12,
+            "skills": ["데이터분석", "보고서작성", "클라이언트관리"]
+          }
+        ]
+      },
+      "skills": {
+        "programming_languages": [],
+        "frameworks": [],
+        "tools": ["Excel", "PowerPoint", "Tableau"],
+        "databases": []
+      },
+      "certifications": [
+        "PMP (프로젝트관리전문가)"
+      ],
+      "interests": [
+        "리더십",
+        "전략기획",
+        "비즈니스개발"
+      ]
+    }
+  ]
+}
