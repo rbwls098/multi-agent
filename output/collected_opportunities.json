@@ -1,0 +1,214 @@
+{
+  "opportunities": [
+    {
+      "id": "saram_auto_0",
+      "title": "2026 방산부문 AX 대규모 채용 (프론트엔드 / AI UX 개발자)",
+      "company": "한화시스템(주)",
+      "category": "웹개발",
+      "required_skills": [
+        "프론트엔드",
+        "API",
+        "AI(인공지능)",
+        "인터페이스",
+        "TypeScript"
+      ],
+      "experience_years": 3
+    },
+    {
+      "id": "saram_auto_1",
+      "title": "2026 방산부문 AX 대규모 채용 (백엔드 / AI 서비스 개발자)",
+      "company": "한화시스템(주)",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "API",
+        "아키텍쳐",
+        "AI(인공지능)",
+        "데이터분석"
+      ],
+      "experience_years": 4
+    },
+    {
+      "id": "saram_auto_2",
+      "title": "AI 개발자",
+      "company": "(주)테크랩스",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "딥러닝",
+        "머신러닝",
+        "모델링",
+        "AI(인공지능)"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_3",
+      "title": "[웨이즈원(주)] Full Stack 웹개발자 채용",
+      "company": "웨이즈원(주)",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "웹개발",
+        "프론트엔드",
+        "SI개발",
+        "DBMS"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_4",
+      "title": "[정규직] 교육콘텐츠기업 모바일 앱 개발자 정규직 채용",
+      "company": "동호에이치알(주)",
+      "category": "데이터/AI",
+      "required_skills": [
+        "게임개발",
+        "기술지원",
+        "데이터분석가",
+        "데이터엔지니어",
+        "앱개발"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_5",
+      "title": "백엔드(Backend)개발자",
+      "company": "(주)인터엑스",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "API",
+        "Git"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_6",
+      "title": "웹 개발자 채용 (정규직)",
+      "company": "(주)모비젠",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "웹개발",
+        "웹마스터",
+        "프론트엔드",
+        "반응형웹"
+      ],
+      "experience_years": 2
+    },
+    {
+      "id": "saram_auto_7",
+      "title": "주니어 웹 개발자 모집 (신입 ~ 2년차, Spring Framework)",
+      "company": "(주)지앤티솔루션",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "유지보수",
+        "프론트엔드"
+      ],
+      "experience_years": 2
+    },
+    {
+      "id": "saram_auto_8",
+      "title": "마크클라우드 솔루션 백엔드 개발자 채용 (신입/경력)",
+      "company": "(주)마크클라우드",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "검색엔진",
+        "딥러닝"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_9",
+      "title": "[GeekStudio] Season 6 Frontend 개발자 모집",
+      "company": "(주)긱스튜디오",
+      "category": "웹개발",
+      "required_skills": [
+        "프론트엔드",
+        "API",
+        "Ajax",
+        "CSS",
+        "CSS3"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_10",
+      "title": "[주4.5일] 백엔드 개발자(JAVA) 채용",
+      "company": "(주)인라이플",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "프론트엔드",
+        "SI개발"
+      ],
+      "experience_years": 2
+    },
+    {
+      "id": "saram_auto_11",
+      "title": "JAVA Back-end 개발자 모집(신입지원 가능)",
+      "company": "스마트핀텍(주)",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "웹개발",
+        "유지보수",
+        "API",
+        "DBMS"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_12",
+      "title": "[AX연구팀] 영상분석 플랫폼 백엔드 개발자 채용",
+      "company": "(주)칸코드",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "웹개발",
+        "웹마스터",
+        "딥러닝",
+        "머신러닝"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_13",
+      "title": "백엔드/풀스택 개발자 서버개발 및 유지보수 ,잠실역,연봉3천",
+      "company": "(주)웰브릿지",
+      "category": "웹개발",
+      "required_skills": [
+        "기술지원",
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "유지보수"
+      ],
+      "experience_years": 0
+    },
+    {
+      "id": "saram_auto_14",
+      "title": "AI 기반 웹/앱 개발자 채용",
+      "company": "(주)모아교육그룹",
+      "category": "웹개발",
+      "required_skills": [
+        "백엔드/서버개발",
+        "앱개발",
+        "웹개발",
+        "네트워크",
+        "빅데이터"
+      ],
+      "experience_years": 0
+    }
+  ]
+}
