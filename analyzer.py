@@ -18,7 +18,7 @@ class CompetencyAnalysisAgent:
                 'user_id': profile['id'],
                 'name': profile['name'],
                 'experience_years': profile['experience']['years'],
-                'skills': profile['skills']['programming_languages'] + profile['skills']['frameworks'],
+                'skills': sum(profile['skills'].values(), []) + [s for pos in profile.get('experience', {}).get('positions', []) for s in pos.get('skills', [])],
                 'interests': interests,
                 'education': profile['education']['major'],
                 'certifications': profile['certifications'],
@@ -30,11 +30,14 @@ class CompetencyAnalysisAgent:
         return analyzed_profiles
 
     def _determine_job_type(self, interests):
+        has_design = any('디자인' in i or 'ui' in i.lower() or 'ux' in i.lower() for i in interests)
         has_web = any('웹' in i or '프론트' in i or 'react' in i.lower() for i in interests)
         has_ai = any('ai' in i.lower() or '머신' in i or '데이터' in i for i in interests)
-        has_biz = any('리더' in i or '비즈' in i or '매니저' in i for i in interests)
+        has_biz = any('리더' in i or '비즈' in i or '매니' in i or '경영' in i or '마케팅' in i or '전략' in i for i in interests)
         
-        if has_web:
+        if has_design:
+            return '디자인'
+        elif has_web:
             return '웹개발'
         elif has_ai:
             return '데이터/AI'

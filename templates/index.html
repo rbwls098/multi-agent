@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커리어 매칭 에이전트</title>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #f4f7f9; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 50px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; color: #555; }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing: border-box;
+        }
+        textarea { height: 100px; resize: vertical; }
+        button {
+            width: 100%; padding: 15px; background-color: #3498db; color: white; border: none; border-radius: 8px;
+            font-size: 18px; font-weight: bold; cursor: pointer; transition: background 0.3s; margin-top: 10px;
+        }
+        button:hover { background-color: #2980b9; }
+        .hint { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 커리어 매칭 에이전트</h1>
+        <p style="text-align: center; color: #666;">당신의 정보를 입력하면 AI 에이전트들이 최적의 채용 공고를 찾아드립니다.</p>
+        <form action="/analyze" method="post">
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="홍길동" required>
+            </div>
+            <div class="form-group">
+                <label for="experience_years">경력 연수</label>
+                <input type="number" id="experience_years" name="experience_years" min="0" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="skills">보유 기술 (쉼표로 구분)</label>
+                <input type="text" id="skills" name="skills" placeholder="Python, React, SQL, FastAPI" required>
+                <div class="hint">예: Python, Java, AWS, Figma</div>
+            </div>
+            <div class="form-group">
+                <label for="interests">관심 분야 (쉼표로 구분)</label>
+                <input type="text" id="interests" name="interests" placeholder="웹개발, AI 모델링, 마케팅" required>
+                <div class="hint">예: 백엔드 개발, 데이터 분석, UI 디자인</div>
+            </div>
+            <button type="submit">매칭 시작하기</button>
+        </form>
+    </div>
+</body>
+</html>

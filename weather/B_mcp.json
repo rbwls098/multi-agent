@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "python",
+      "args": ["weather_server.py"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./output"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    }
+  }
+}
