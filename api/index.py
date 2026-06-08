@@ -27,7 +27,7 @@ coach = CoverLetterCoachAgent()
 @app.get("/")
 @app.get("/api")
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 @app.post("/analyze")
 @app.post("/api/analyze")
@@ -81,3 +81,4 @@ async def analyze_profile(
             os.remove(temp_profile_path)
 
 # Vercel은 'app' 객체를 엔트리 포인트로 사용합니다.
+� 'app' 객체를 엔트리 포인트로 사용합니다.

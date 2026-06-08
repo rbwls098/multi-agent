@@ -1,214 +1,522 @@
-{
+﻿{
   "opportunities": [
     {
-      "id": "saram_auto_0",
-      "title": "[넥스트플레이어] 인플루언서 마케팅 담당자 채용",
-      "company": "(주)넥스트플레이어",
-      "category": "개발",
+      "id": "saram_공항_0",
+      "title": "제이에이에스 제주공항 공항서비스직 채용",
+      "company": "(주)제이에이에스",
+      "category": "공항",
       "required_skills": [
-        "CRM마케팅",
-        "온라인마케팅",
-        "마케팅전략",
-        "마케팅",
-        "디지털마케팅"
+        "지상직",
+        "항공사",
+        "항공운송"
       ],
-      "experience_years": 1
+      "qualifications": "지상직, 항공사 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/14(일)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54041810&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_1",
-      "title": "HLB(주)헬스케어 마케팅본부 마케팅팀 채용",
-      "company": "에이치엘비(주)헬스케어",
-      "category": "개발",
+      "id": "saram_공항_1",
+      "title": "공항[지역선택 가능] : 와이파이 도시락 : [로밍 안내데스크/사무직]",
+      "company": "피피에이치알",
+      "category": "공항",
       "required_skills": [
-        "블로그마케팅",
-        "온라인마케팅",
-        "마케팅전략",
-        "마케팅",
-        "비즈니스마케팅"
+        "고객응대",
+        "고객안내",
+        "고객관리",
+        "안내데스크",
+        "기계판매"
       ],
-      "experience_years": 5
+      "qualifications": "고객응대, 고객안내 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/30(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54028489&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_2",
-      "title": "[하루 크리에이티브] 일본 마케팅, 큐텐MD 신입/경력 채용",
-      "company": "(주)더원마케팅",
-      "category": "비즈니스개발",
+      "id": "saram_공항_2",
+      "title": "[김해국제공항] 항공보안요원 정규 / 파트타임(하반기)",
+      "company": "에어포트서비스",
+      "category": "공항",
       "required_skills": [
-        "마케팅",
-        "광고마케팅",
-        "온라인MD",
-        "프로모션기획",
-        "상품기획"
+        "항공사",
+        "보안요원",
+        "항공사"
       ],
-      "experience_years": 0
+      "qualifications": "항공사, 보안요원 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/01(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54042788&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_3",
-      "title": "[다노클리닉] 온라인 이커머스 운영·마케팅 담당 MD 채용",
-      "company": "씨앤지(주)",
-      "category": "개발",
+      "id": "saram_공항_3",
+      "title": "(주) JAS 제주공항 지상조업 채용(신입/경력)",
+      "company": "(주)제이에이에스",
+      "category": "공항",
       "required_skills": [
-        "온라인마케팅",
-        "마케팅전략",
-        "바이럴마케팅",
-        "B2C",
-        "쇼핑몰관리"
+        "물류기사",
+        "항공운송",
+        "특수차량",
+        "적재/하역",
+        "항공운송"
       ],
-      "experience_years": 3
+      "qualifications": "물류기사, 항공운송 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "상시채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53686477&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_4",
-      "title": "[동국제약] 신입/경력 채용(글로벌/개발/디자인/영업/마케팅/관리 등 모집)  ~ 6/10",
-      "company": "동국제약(주)",
-      "category": "개발",
+      "id": "saram_공항_4",
+      "title": "[부산/김해공항] 사무보조 및 채용 업무지원",
+      "company": "㈜선정인터내셔날",
+      "category": "공항",
       "required_skills": [
-        "SNS마케팅",
-        "퍼포먼스마케팅",
-        "마케팅전략",
-        "마케팅",
-        "글로벌마케팅"
+        "사무직",
+        "서무",
+        "총무",
+        "문서작성",
+        "비품관리"
       ],
-      "experience_years": 0
+      "qualifications": "사무직, 서무 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "상시채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54022836&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_5",
-      "title": "덴티움 국내영업/해외영업/마케팅본부 대규모 채용",
-      "company": "(주)덴티움",
-      "category": "비즈니스개발",
+      "id": "saram_공항_5",
+      "title": "남부공항서비스(주) 김해국제공항 보건관리자 기간제 채용",
+      "company": "남부공항서비스(주)",
+      "category": "공항",
       "required_skills": [
-        "마케팅기획",
-        "온라인마케팅",
-        "마케팅전략",
-        "마케팅",
-        "비즈니스마케팅"
+        "보건관리자",
+        "위생사",
+        "시설관리"
       ],
-      "experience_years": 0
+      "qualifications": "보건관리자, 위생사 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/01(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54045473&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_6",
-      "title": "영업/마케팅, IT/SW, 연구/개발, 경영지원, 생산물류 분야 채용",
-      "company": "오스템임플란트(주)",
-      "category": "개발",
+      "id": "saram_공항_6",
+      "title": "(일본/나리타공항) 한국계 LCC항공사 정비보조 스태프 모집",
+      "company": "(주)위더스토탈에어포트서비스",
+      "category": "공항",
       "required_skills": [
-        "브랜드마케팅",
+        "공항",
+        "항공사",
+        "지상조업",
+        "항공기",
+        "항공기정비"
+      ],
+      "qualifications": "공항, 항공사 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/26(금)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53999065&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_공항_7",
+      "title": "(일본/후쿠오카공항-경력직) 공항지상직 STAFF 모집",
+      "company": "(주)위더스토탈에어포트서비스",
+      "category": "공항",
+      "required_skills": [
+        "공항",
+        "지상직",
+        "고객응대",
+        "고객안내",
+        "호텔리어"
+      ],
+      "qualifications": "공항, 지상직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/08(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54101419&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_공항_8",
+      "title": "[일본공항근무] 일본전국 공항지상직 STAFF 채용",
+      "company": "터치잡(JOB)재팬",
+      "category": "공항",
+      "required_skills": [
+        "공항",
+        "파견대행"
+      ],
+      "qualifications": "공항, 파견대행 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/27(토)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54010802&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_공항_9",
+      "title": "[제주공항] 중국 항공사 스테이션 매니저 모집",
+      "company": "주식회사 우주홀딩스",
+      "category": "공항",
+      "required_skills": [
+        "공항",
+        "지상직",
+        "항공사",
+        "항공사"
+      ],
+      "qualifications": "공항, 지상직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/10(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53850385&location=ts&searchword=%EA%B3%B5%ED%95%AD&searchType=search&paid_fl=n&search_uuid=dea7b099-60c1-41cb-aaf0-b2182e223f44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_항공사_0",
+      "title": "항공사 관리팀(회계/인사/총무) 채용(신입/경력)",
+      "company": "(주)탐스에어서비스",
+      "category": "항공사",
+      "required_skills": [
+        "전산회계",
+        "더존",
+        "자체기장",
+        "전표입력",
+        "총무"
+      ],
+      "qualifications": "전산회계, 더존 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/28(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54026785&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_항공사_3",
+      "title": "[배송/영업] 호텔 및 항공사 납품 배송사원 채용",
+      "company": "(주)그린유통",
+      "category": "항공사",
+      "required_skills": [
+        "납품운전원",
+        "물류기사",
+        "배송기사",
+        "택배기사",
+        "영업마케팅"
+      ],
+      "qualifications": "납품운전원, 물류기사 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/11(목)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53864187&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_항공사_4",
+      "title": "(항공사) 알래스카항공 영업부 채용",
+      "company": "㈜미방항운",
+      "category": "항공사",
+      "required_skills": [
+        "항공사",
+        "기업영업",
+        "영업기획",
+        "항공사영업",
+        "항공사"
+      ],
+      "qualifications": "항공사, 기업영업 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/27(월)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54015701&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_항공사_5",
+      "title": "[인천공항/복지多] 국내 1군 항공사 기내식 쉐프 채용",
+      "company": "(주)키스템프그룹",
+      "category": "항공사",
+      "required_skills": [
+        "부주방장",
+        "주방보조",
+        "주방장",
+        "케이터링",
+        "주방"
+      ],
+      "qualifications": "부주방장, 주방보조 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/20(토)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54086036&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_항공사_6",
+      "title": "Air Astana 항공사 여객 GSA 영업지원 모집",
+      "company": "(주)샤프에비에이션케이",
+      "category": "항공사",
+      "required_skills": [
+        "영업관리",
+        "영업지원",
         "영업마케팅",
-        "제휴마케팅",
-        "영업",
-        "영업전략"
+        "영업전략",
+        "B2B"
       ],
-      "experience_years": 0
+      "qualifications": "영업관리, 영업지원 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "채용시",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54107902&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_7",
-      "title": "[동국제약] 헬스앤뷰티 신입/경력 채용(마케팅, 영업, 상품기획, 데이터관리, CX 등) ~ 6/10",
-      "company": "동국제약(주)",
-      "category": "비즈니스개발",
+      "id": "saram_항공사_7",
+      "title": "[외국계항공사GSA] 항공영업 영업전략부문 채용",
+      "company": "㈜미방항운",
+      "category": "항공사",
       "required_skills": [
-        "마케팅기획",
-        "SNS마케팅",
-        "CRM마케팅",
-        "온라인마케팅",
-        "퍼포먼스마케팅"
+        "영업전략",
+        "해외영업",
+        "거래처영업",
+        "기업영업",
+        "여행사영업"
       ],
-      "experience_years": 0
+      "qualifications": "영업전략, 해외영업 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/05(일)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54088581&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_8",
-      "title": "토스플레이스 자회사 [iShopCARE] 대규모 채용｜ CX·마케팅·영업·개발·보안·운영 外",
-      "company": "(주)아이샵케어",
-      "category": "비즈니스개발",
+      "id": "saram_항공사_8",
+      "title": "[서울 강서] 항공사 홈페이지 운영 디자이너 모집",
+      "company": "엔지니어스토리(유)",
+      "category": "항공사",
       "required_skills": [
-        "블로그마케팅",
-        "마케팅기획",
-        "SNS마케팅",
-        "프로덕트마케팅",
-        "온라인마케팅"
+        "앱디자인",
+        "웹디자인",
+        "UI/UX디자인",
+        "Figma",
+        "PhotoShop"
       ],
-      "experience_years": 0
+      "qualifications": "앱디자인, 웹디자인 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/01(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54047196&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_9",
-      "title": "[프로젝트21] 콘텐츠 마케팅 매니저",
-      "company": "(주)더파운더즈",
-      "category": "개발",
+      "id": "saram_항공사_9",
+      "title": "광주 승무원학원 강사모집(항공사, 항공과 출신 우대)",
+      "company": "에듀플라잇승무원학원",
+      "category": "항공사",
       "required_skills": [
-        "퍼포먼스마케팅",
-        "마케팅전략",
-        "마케팅",
-        "디지털마케팅",
-        "콘텐츠마케팅"
+        "학원강사",
+        "승무원학원",
+        "직업전문학교"
       ],
-      "experience_years": 3
+      "qualifications": "학원강사, 승무원학원 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/07(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54099474&location=ts&searchword=%ED%95%AD%EA%B3%B5%EC%82%AC&searchType=search&paid_fl=n&search_uuid=f0c73b31-251c-426f-994e-493685187401",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_10",
-      "title": "경영지원/K뷰티상품기획BM/글로벌영업/글로벌틱톡마케팅/온라인MD/PD/디자이너/구매개발",
-      "company": "꽃길코리아(유)",
-      "category": "비즈니스개발",
+      "id": "saram_사무직_0",
+      "title": "[삼성전자 남서울물류센터] 사무직 정규직 채용",
+      "company": "(주)지엘",
+      "category": "사무직",
       "required_skills": [
-        "마케팅기획",
-        "SNS마케팅",
-        "콘텐츠마케팅",
-        "브랜드마케팅",
-        "광고기획"
+        "사무행정",
+        "사무직",
+        "사무보조",
+        "문서작성",
+        "서무"
       ],
-      "experience_years": 0
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/19(일)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53946147&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_11",
-      "title": "동아오츠카 마케팅전략실 경력 및 인턴 채용 (~6/11)",
-      "company": "동아오츠카(주)",
-      "category": "데이터/AI",
+      "id": "saram_사무직_1",
+      "title": "한양정밀 본사 각 사업부 사무직 및 현장직 직원 채용공고",
+      "company": "(주)한양정밀",
+      "category": "사무직",
       "required_skills": [
-        "스포츠마케팅",
-        "마케팅",
-        "마케팅기획",
-        "BTL",
-        "데이터분석"
+        "총무",
+        "경영지원",
+        "4대보험",
+        "급여(Payroll)",
+        "기업회계"
       ],
-      "experience_years": 0
+      "qualifications": "총무, 경영지원 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/14(일)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53900420&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_12",
-      "title": "[(주)피죤] 마케팅팀 경력사원 모집",
-      "company": "㈜피죤",
-      "category": "개발",
+      "id": "saram_사무직_2",
+      "title": "[현대차그룹] 모트라스 화성공장 사무직(계약직) 사원 모집",
+      "company": "모트라스(주)",
+      "category": "사무직",
       "required_skills": [
-        "블로그마케팅",
-        "SNS마케팅",
-        "온라인마케팅",
-        "퍼포먼스마케팅",
-        "마케팅전략"
+        "사무행정",
+        "사무직",
+        "문서작성",
+        "서무",
+        "총무"
       ],
-      "experience_years": 3
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/07(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54106297&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_13",
-      "title": "2026년 각 부문별 직원채용(전략기획팀, 마케팅팀, 미래사업팀)",
-      "company": "대주산업(주)",
-      "category": "비즈니스개발",
+      "id": "saram_사무직_3",
+      "title": "[성과금高ㅣ대기업] 현대글로비스 사무직 채용(정산, 사무보조)",
+      "company": "(주)휴먼코아",
+      "category": "사무직",
       "required_skills": [
-        "블로그마케팅",
-        "마케팅기획",
-        "SNS마케팅",
-        "프로덕트마케팅",
-        "CRM마케팅"
+        "사무행정",
+        "사무직",
+        "사무보조",
+        "문서작성",
+        "서무"
       ],
-      "experience_years": 0
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/23(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54028971&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
     },
     {
-      "id": "saram_auto_14",
-      "title": "온라인 쇼핑몰 판매/웹디자이너/온라인 마케팅 마케터 채용",
-      "company": "(주)우주전자",
-      "category": "개발",
+      "id": "saram_사무직_4",
+      "title": "[성과금高ㅣ대기업] 현대글로비스 사무직 채용(포워더)",
+      "company": "(주)휴먼코아",
+      "category": "사무직",
       "required_skills": [
-        "블로그마케팅",
-        "SNS마케팅",
-        "온라인마케팅",
-        "마케팅전략",
-        "마케팅"
+        "사무행정",
+        "사무직",
+        "사무보조",
+        "서무",
+        "경영지원"
       ],
-      "experience_years": 0
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/23(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54040960&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_사무직_5",
+      "title": "[대기업/신사역] 현대건설 디에이치 갤러리 사무직 채용",
+      "company": "아이비커리어(주)",
+      "category": "사무직",
+      "required_skills": [
+        "사무행정",
+        "사무직",
+        "사무보조",
+        "문서작성",
+        "서무"
+      ],
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/30(화)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54102593&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_사무직_6",
+      "title": "유진약품(주)  사무직 공고",
+      "company": "유진약품(주)",
+      "category": "사무직",
+      "required_skills": [
+        "사무직",
+        "사무보조",
+        "자료입력",
+        "서류관리",
+        "전화응대"
+      ],
+      "qualifications": "사무직, 사무보조 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/02(목)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54054716&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_사무직_7",
+      "title": "(주)아세아텍에서 플랜트 기획·전략 사무직 신입을 찾고 있어요",
+      "company": "(주)아세아텍",
+      "category": "사무직",
+      "required_skills": [
+        "사무직",
+        "경리",
+        "경리사무원",
+        "사업관리",
+        "실적관리"
+      ],
+      "qualifications": "사무직, 경리 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/04(토)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54076834&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_사무직_8",
+      "title": "[여의도/대기업] JB우리캐피탈 본사 금융 사무직 채용",
+      "company": "아이비커리어(주)",
+      "category": "사무직",
+      "required_skills": [
+        "사무행정",
+        "사무직",
+        "사무보조",
+        "문서작성",
+        "서무"
+      ],
+      "qualifications": "사무행정, 사무직 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/12(금)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54012436&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_사무직_9",
+      "title": "PLM 영업지원 사무직 인력 채용",
+      "company": "(주)솔리드이엔지",
+      "category": "사무직",
+      "required_skills": [
+        "사무직",
+        "솔루션업체",
+        "소프트웨어개발"
+      ],
+      "qualifications": "사무직, 솔루션업체 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/02(목)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54058478&location=ts&searchword=%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d08ff1f8-4a09-4ec2-9adf-a1d3c18af71f",
+      "source": "사람인"
     }
   ]
 }

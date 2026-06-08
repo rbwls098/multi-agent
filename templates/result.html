@@ -5,70 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>매칭 결과 - 커리어 에이전트</title>
     <style>
-        body { font-family: 'Pretendard', sans-serif; background-color: #f4f7f9; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 1000px; margin: 0 auto; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; background: white; padding: 20px 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        h1 { margin: 0; color: #2c3e50; font-size: 24px; }
-        .back-btn { text-decoration: none; color: #3498db; font-weight: 600; }
+        body { font-family: 'Pretendard', sans-serif; background-color: #f0f2f5; color: #1c1e21; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; background: white; padding: 20px 30px; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        h1 { margin: 0; color: #1a73e8; font-size: 26px; font-weight: 800; }
+        .back-btn { text-decoration: none; color: #5f6368; font-weight: 600; font-size: 15px; border: 1px solid #dadce0; padding: 8px 16px; border-radius: 8px; transition: all 0.2s; }
+        .back-btn:hover { background: #f8f9fa; border-color: #bdc1c6; }
         
-        .user-info { background: #fff; padding: 25px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #3498db; }
-        .user-info h2 { margin-top: 0; font-size: 20px; color: #2c3e50; }
-        .tag { display: inline-block; background: #eef2f7; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-right: 5px; margin-bottom: 5px; color: #555; }
+        .user-summary { background: white; padding: 25px; border-radius: 16px; margin-bottom: 30px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 20px; }
+        .avatar { width: 60px; height: 60px; background: #e8f0fe; color: #1a73e8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; }
+        .user-details h2 { margin: 0 0 8px 0; font-size: 20px; }
+        .tag { display: inline-block; background: #f1f3f4; padding: 4px 12px; border-radius: 6px; font-size: 13px; margin-right: 6px; color: #3c4043; font-weight: 500; }
         
-        .results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.2s; position: relative; overflow: hidden; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        .score-badge { position: absolute; top: 20px; right: 20px; background: #2ecc71; color: white; padding: 5px 12px; border-radius: 15px; font-weight: bold; font-size: 14px; }
-        .company { color: #7f8c8d; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
-        .job-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; height: 50px; overflow: hidden; }
-        .category { font-size: 13px; color: #3498db; margin-bottom: 15px; display: block; }
-        .tip-box { background: #fff9eb; padding: 15px; border-radius: 8px; font-size: 14px; border: 1px solid #ffeaa7; }
-        .tip-title { font-weight: bold; color: #d35400; margin-bottom: 5px; display: block; }
+        .results-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .card { background: white; border-radius: 16px; padding: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column; overflow: hidden; border: 1px solid transparent; transition: all 0.3s; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); border-color: #1a73e8; }
         
-        .no-result { text-align: center; padding: 50px; background: white; border-radius: 12px; }
+        .card-header { padding: 20px 25px; border-bottom: 1px solid #f1f3f4; display: flex; justify-content: space-between; align-items: flex-start; }
+        .score-box { background: #e6f4ea; color: #1e8e3e; padding: 6px 12px; border-radius: 8px; font-weight: 700; font-size: 14px; text-align: center; }
+        .score-label { display: block; font-size: 10px; text-transform: uppercase; margin-bottom: 2px; }
+        
+        .company-info { margin-bottom: 4px; color: #5f6368; font-weight: 600; font-size: 14px; }
+        .job-title { font-size: 20px; font-weight: 800; color: #202124; margin: 0 0 12px 0; }
+        
+        .card-body { padding: 20px 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: #fafafa; }
+        .info-section { background: white; padding: 15px; border-radius: 12px; border: 1px solid #f1f3f4; }
+        .info-title { display: block; font-weight: 700; font-size: 13px; color: #1a73e8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .info-content { font-size: 14px; color: #3c4043; margin: 0; }
+        
+        .card-footer { padding: 15px 25px; background: white; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f3f4; }
+        .meta-info { font-size: 13px; color: #70757a; display: flex; gap: 15px; }
+        .apply-btn { background: #1a73e8; color: white; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px; transition: background 0.2s; }
+        .apply-btn:hover { background: #1765cc; }
+
+        @media (max-width: 768px) { .card-body { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔍 분석 결과 리포트</h1>
-            <a href="/" class="back-btn">← 다시 입력하기</a>
+            <h1>🚀 매칭 랭킹 리포트</h1>
+            <a href="/" class="back-btn">← 다시 분석하기</a>
         </div>
 
-        <div class="user-info">
-            <h2>{{ user.name }} 님의 프로필 분석 ({{ user.job_type }})</h2>
-            <p><strong>경력:</strong> {{ user.experience_years }}년</p>
-            <div>
-                <strong>보유 기술:</strong>
-                {% for skill in user.skills %}
-                <span class="tag">{{ skill }}</span>
-                {% endfor %}
+        <div class="user-summary">
+            <div class="avatar">{{ user.name[0] }}</div>
+            <div class="user-details">
+                <h2>{{ user.name }} 님 ({{ user.experience_years }}년차)</h2>
+                <div>
+                    {% for skill in user.skills[:5] %}
+                    <span class="tag"># {{ skill }}</span>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 
-        <h3>🎯 추천 채용 공고</h3>
-        {% if user.matched_opportunities %}
         <div class="results-grid">
             {% for opp in user.matched_opportunities %}
             <div class="card">
-                <div class="score-badge">{{ (opp.match_score * 100)|int }}%</div>
-                <div class="company">{{ opp.company }}</div>
-                <div class="job-title">{{ opp.title }}</div>
-                <span class="category"># {{ opp.category }}</span>
+                <div class="card-header">
+                    <div>
+                        <div class="company-info">{{ opp.company }}</div>
+                        <h3 class="job-title">{{ opp.title }}</h3>
+                        <div class="meta-info">
+                            <span>📅 <strong>마감일:</strong> {{ opp.deadline }}</span>
+                            <span>🌐 <strong>출처:</strong> {{ opp.source }}</span>
+                        </div>
+                    </div>
+                    <div class="score-box">
+                        <span class="score-label">매칭 점수</span>
+                        {{ (opp.match_score * 100)|int }}%
+                    </div>
+                </div>
                 
-                <div class="tip-box">
-                    <span class="tip-title">💡 자소서 작성 팁</span>
-                    {{ tips[loop.index0] }}
+                <div class="card-body">
+                    <div class="info-section">
+                        <span class="info-title">📋 자격요건</span>
+                        <p class="info-content">{{ opp.qualifications }}</p>
+                    </div>
+                    <div class="info-section">
+                        <span class="info-title">💎 우대사항</span>
+                        <p class="info-content">{{ opp.preferred }}</p>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <div class="tip-box" style="font-size: 13px; color: #1e8e3e; font-weight: 600;">
+                        💡 {{ tips[loop.index0][:60] }}...
+                    </div>
+                    <a href="{{ opp.url }}" target="_blank" class="apply-btn">공고 확인 및 지원</a>
                 </div>
             </div>
             {% endfor %}
         </div>
-        {% else %}
-        <div class="no-result">
-            <p>현재 조건에 맞는 적합한 공고를 찾지 못했습니다.</p>
-            <p>기술 스택을 보완하거나 관심 분야를 넓혀보세요!</p>
-        </div>
-        {% endif %}
     </div>
 </body>
 </html>
