@@ -4,10 +4,12 @@ import os
 import re
 import urllib.parse
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 class InformationGatheringAgent:
     def __init__(self, fallback_data_path="sample_data/opportunities.json"):
         self.fallback_data_path = fallback_data_path
+        self.current_year = 2026 # 시스템 기준 현재 연도
 
     def run(self, search_keywords=None):
         if not search_keywords:
@@ -20,7 +22,17 @@ class InformationGatheringAgent:
             opportunities.extend(self._collect_jobkorea(keyword))
             opportunities.extend(self._collect_saramin(keyword))
 
-        # 중복 제거 (제목+회사명 기준)
+        # 1. 날짜 기반 필터링 (현재 시점 이후 공고만)
+        current_date = datetime(2026, 6, 11) # 시스템 기준 현재 날짜
+        filtered_opps = []
+        for opp in opportunities:
+            deadline = opp.get('deadline', '')
+            if self._is_active_deadline(deadline, current_date):
+                filtered_opps.append(opp)
+        
+        opportunities = filtered_opps
+
+        # 2. 중복 제거 (제목+회사명 기준)
         unique_opps = {}
         for opp in opportunities:
             key = f"{opp['title']}_{opp['company']}"
@@ -30,19 +42,19 @@ class InformationGatheringAgent:
         opportunities = list(unique_opps.values())
 
         if not opportunities:
-            print("⚠️ 실시간 수집 결과가 없어 기본 데이터를 제공합니다.")
+            print("⚠️ 실시간 수집 결과가 없어 최신 가상 데이터를 제공합니다.")
             for kw in search_keywords:
                 opportunities.append({
                     "id": f"ai_gen_{kw}",
-                    "title": f"{kw} 분야 전문 인재 채용",
+                    "title": f"{kw} 분야 전문 인재 채용 (2026 하반기)",
                     "company": "AI 추천 유망 기업",
                     "category": kw,
                     "required_skills": [kw],
                     "qualifications": "해당 분야 전공 또는 유관 경험 보유자",
                     "preferred": "관련 자격증 소지자, 원활한 커뮤니케이션 가능자",
                     "experience_years": 0,
-                    "deadline": "채용 시 마감",
-                    "url": "https://www.jobkorea.co.kr",
+                    "deadline": "2026.06.30 까지",
+                    "url": "https://www.saramin.co.kr",
                     "source": "AI 추천"
                 })
 
@@ -50,8 +62,35 @@ class InformationGatheringAgent:
         with open("output/collected_opportunities.json", "w", encoding="utf-8-sig") as f:
             json.dump({"opportunities": opportunities}, f, ensure_ascii=False, indent=2)
 
-        print(f"✓ 총 {len(opportunities)}개의 상세 채용 데이터를 확보했습니다.\n")
+        print(f"✓ 총 {len(opportunities)}개의 유효한 채용 데이터를 확보했습니다.\n")
         return opportunities
+
+    def _is_active_deadline(self, deadline_str, current_date):
+        """마감일이 현재 날짜 이후인지 확인"""
+        if "마감" in deadline_str or "상시" in deadline_str or "채용시" in deadline_str:
+            return True
+        
+        # 날짜 추출 (MM/DD 또는 YYYY.MM.DD)
+        date_match = re.search(r"(\d{4})?[./-]?(\d{1,2})[./-]?(\d{1,2})", deadline_str)
+        if date_match:
+            groups = date_match.groups()
+            year = int(groups[0]) if groups[0] else self.current_year
+            month = int(groups[1])
+            day = int(groups[2])
+            
+            try:
+                deadline_date = datetime(year, month, day)
+                # 연도가 없어서 과거로 오해받는 경우 보정 (6월인데 마감이 1월이면 내년으로 간주하거나, 이미 지난 것)
+                if not groups[0] and deadline_date < current_date:
+                    # 마감일이 지났는데 연도가 안적혀있으면 올해가 아닐 수 있음
+                    # 하지만 크롤링 결과는 보통 현재 공고이므로, 
+                    # 한 달 이상 차이 나면 과거 공고로 보고 필터링
+                    if (current_date - deadline_date).days > 30:
+                        return False
+                return deadline_date >= current_date
+            except:
+                return True
+        return True
 
     def _collect_jobkorea(self, keyword):
         results = []

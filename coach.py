@@ -1,46 +1,56 @@
+from llm_client import llm
+
 class CoverLetterCoachAgent:
-    def run(self, classified_users):
-        print("[자소서 코치 에이전트] 추천 기회별 자소서 팁과 안내문을 검토 및 생성합니다.")
+    def run(self, matched_profiles):
+        print("[자소서 코치 에이전트] 추천 기회별 고도화된 자소서 팁과 가이드를 생성합니다.")
         
-        output = "# 취업 안내 - 맞춤형 추천\n\n"
+        final_output = ""
         
-        # 3번 피드백 반영: for user in classified_users: 반복문 제대로 적용
-        for user in classified_users:
-            output += f"## {user['name']} - {user['job_type']} 직무\n\n"
-            output += f"**경력:** {user['experience_years']}년\n\n"
+        for user in matched_profiles:
+            user_name = user.get('name', '사용자')
+            experience = user.get('experience_years', 0)
+            skills = ", ".join(user.get('skills', []))
+            matches = user.get('matched_opportunities', [])
             
-            if not user.get('matched_opportunities'):
-                output += "현재 적합한 공고가 없습니다. 추가 기술 확보(자격증, 포트폴리오 등)를 권장합니다.\n\n"
+            if not matches:
                 continue
+
+            # LLM을 사용하여 전체 가이드 작성
+            prompt = f"""
+            당신은 최고의 시니어 커리어 코치입니다. 아래 사용자의 프로필과 매칭된 채용 공고를 바탕으로 
+            [사용자 맞춤형 취업 전략 보고서]를 Markdown 형식으로 작성하세요.
             
-            output += "### 추천 공고 및 자소서 팁\n\n"
-            for idx, opp in enumerate(user['matched_opportunities'], 1):
-                output += f"{idx}. **{opp['title']}** ({opp['company']})\n"
-                output += f"   - 지원 분야: {opp['category']}\n"
-                output += f"   - 역량 매칭도: {int(opp['match_score']*100)}%\n"
-                
-                tip = self._generate_tip(opp['category'], user['experience_years'])
-                output += f"   - 💡 **자소서 팁**: {tip}\n\n"
+            [사용자 정보]
+            - 성함: {user_name}
+            - 경력: {experience}년차
+            - 보유 기술: {skills}
             
-            output += "---\n\n"
+            [추천 채용 공고 정보]
+            {self._format_matches(matches)}
             
-        print("✓ 자소서 팁 및 최종 안내문(Markdown) 구성 완료했습니다.\n")
-        return output
+            [작성 지침]
+            1. 각 공고별로 왜 이 공고가 사용자에게 추천되었는지 '매칭 포인트'를 설명하세요.
+            2. 각 공고별로 자소서 작성 시 강조해야 할 '핵심 키워드'와 '구체적인 작성 팁'을 300자 이상 상세히 적으세요.
+            3. 공고의 [마감일]과 [상세페이지 링크]를 반드시 포함하세요.
+            4. 마지막에 사용자가 즉시 실행해야 할 'To-Do List'를 단계별로 아주 구체적으로 제시하세요.
+            5. 문체는 신뢰감 있고 친절하며, 단정적인 표현보다는 "~을 권장합니다", "~에 도움이 될 것입니다"와 같은 제안형 어조를 사용하세요.
+            
+            결과물은 충분한 분량으로 풍부하게 작성해 주세요.
+            """
+            
+            final_output += llm.chat(prompt)
+            final_output += "\n\n---\n\n"
+            
+        print("✓ 고도화된 자소서 가이드 생성을 완료했습니다.\n")
+        return final_output
         
-    def _generate_tip(self, category, exp_years):
-        tip = ""
-        category_lower = category.lower()
-        if '비즈니스' in category_lower or '기획' in category_lower:
-            tip += "리더십, 전략적 사고, 그리고 팀워크 기반의 협업 성과를 위주로 작성해보세요."
-        elif '개발' in category_lower:
-            tip += "구체적인 기술 스택을 활용한 프로젝트 경험과 문제 해결 과정을 강조하세요."
-        elif 'ai' in category_lower or '데이터' in category_lower:
-            tip += "데이터 파이프라인 구축 또는 머신러닝 프로세스 관련 성과를 부각하세요."
-        else:
-            tip += "직무 관련 핵심 역량과 지원 동기를 명확하게 드러내어 작성해보세요."
-            
-        if exp_years == 0:
-            tip += " 덧붙여, 신입이므로 성장 가능성과 지속적인 학습 열정을 보여주는 것이 핵심입니다."
-        else:
-            tip += f" 덧붙여, {exp_years}년의 실무 경험에서 어떠한 가치를 창출했는지 수치화하여 포함하면 좋습니다."
-        return tip
+    def _format_matches(self, matches):
+        formatted = ""
+        for idx, m in enumerate(matches, 1):
+            formatted += f"{idx}. {m['title']} ({m['company']})\n"
+            formatted += f"   - 지원분야: {m['category']}\n"
+            formatted += f"   - 매칭점수: {int(m['match_score']*100)}%\n"
+            formatted += f"   - 마감일: {m['deadline']}\n"
+            formatted += f"   - 링크: {m['url']}\n"
+            formatted += f"   - 자격요건: {m['qualifications']}\n\n"
+        return formatted

@@ -1,5 +1,4 @@
 import os
-import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -8,8 +7,13 @@ load_dotenv()
 
 def get_api_key():
     # 1. Streamlit Secrets 확인 (클라우드 환경)
-    if "OPENAI_API_KEY" in st.secrets:
-        return st.secrets["OPENAI_API_KEY"]
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets") and "OPENAI_API_KEY" in st.secrets:
+            return st.secrets["OPENAI_API_KEY"]
+    except ImportError:
+        pass
+        
     # 2. 환경 변수 확인 (로컬 환경)
     return os.getenv("OPENAI_API_KEY")
 
@@ -21,7 +25,7 @@ class LLMClient:
 
      def chat(self, prompt: str) -> str:
          if not self.client.api_key:
-             return "LLM Error: API Key is missing."
+             return "LLM Error: API Key is missing. Please check your .env or Streamlit Secrets."
          try:
              response = self.client.chat.completions.create(
                  model=self.model,

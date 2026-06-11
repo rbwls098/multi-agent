@@ -1,230 +1,193 @@
 ﻿{
   "opportunities": [
     {
-      "id": "saram_인국공 사무직_0",
-      "title": "6월 신입 및 경력직 채용",
-      "company": "안국약품(주)",
-      "category": "인국공 사무직",
+      "id": "saram_클라우드 아키텍처_0",
+      "title": "퍼블릭클라우드솔루션아키텍쳐(SA) 인재모집(채용 시 마감)",
+      "company": "(주)신세계아이앤씨",
+      "category": "클라우드 아키텍처",
       "required_skills": [
-        "건강보조식품",
-        "의약·제약",
-        "바이오",
-        "생명공학",
-        "SAP"
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "AWS",
+        "SI·시스템통합"
       ],
-      "qualifications": "건강보조식품, 의약·제약 역량 보유자",
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
       "preferred": "관련 분야 전공 및 자격증 우대",
       "experience_years": 0,
-      "deadline": "~ 06/21(일)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54076371&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
+      "deadline": "~ 06/15(월)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53681427&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
       "source": "사람인"
     },
     {
-      "id": "saram_인국공 사무직_1",
-      "title": "2026년 해커스 교육그룹 [신입/경력] 각 부문별 채용공고",
-      "company": "해커스교육그룹",
-      "category": "인국공 사무직",
+      "id": "saram_클라우드 아키텍처_1",
+      "title": "Cloud 아키텍처 / 데브옵스 엔지니어 모집공고",
+      "company": "(주)투피트",
+      "category": "클라우드 아키텍처",
       "required_skills": [
-        "어학원",
-        "유학원",
+        "클라우드",
+        "아키텍쳐",
+        "DevOps",
+        "Docker",
+        "솔루션업체"
+      ],
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/26(금)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54002034&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_클라우드 아키텍처_2",
+      "title": "[중견IT기업] 2026년 상반기 신입 및 경력 직원 공개 채용",
+      "company": "(주)진인프라",
+      "category": "클라우드 아키텍처",
+      "required_skills": [
+        "클라우드",
+        "인프라",
+        "네트워크",
+        "솔루션",
+        "백엔드/서버개발"
+      ],
+      "qualifications": "클라우드, 인프라 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 06/24(수)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53965580&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_클라우드 아키텍처_3",
+      "title": "2026년 상반기 아이센스 대규모채용",
+      "company": "(주)아이센스",
+      "category": "클라우드 아키텍처",
+      "required_skills": [
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "네트워크",
+        "백엔드/서버개발"
+      ],
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "내일마감",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53817816&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_클라우드 아키텍처_4",
+      "title": "2026년 2분기 부문별 수시채용 (경력직, 계약직)",
+      "company": "(주)이디야",
+      "category": "클라우드 아키텍처",
+      "required_skills": [
+        "클라우드",
+        "아키텍쳐",
+        "네트워크",
         "백엔드/서버개발",
-        "앱개발",
-        "웹개발"
+        "기술지원"
       ],
-      "qualifications": "어학원, 유학원 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "상시채용",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53489648&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_인국공 사무직_2",
-      "title": "각 부문별 신입 및 경력모집",
-      "company": "(주)두원전자",
-      "category": "인국공 사무직",
-      "required_skills": [
-        "자동차부품",
-        "기술지원",
-        "보안컨설팅",
-        "유지보수",
-        "정보보안"
-      ],
-      "qualifications": "자동차부품, 기술지원 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "~ 08/31(월)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54120034&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_인국공 사무직_3",
-      "title": "2026 각 부문 신입/경력 수시채용",
-      "company": "파크시스템스(주)",
-      "category": "인국공 사무직",
-      "required_skills": [
-        "반도체",
-        "디스플레이",
-        "정밀광학",
-        "기술지원",
-        "데이터엔지니어"
-      ],
-      "qualifications": "반도체, 디스플레이 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "~ 07/08(수)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53660011&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_인국공 사무직_4",
-      "title": "[시스윈] 각 부문 신입/경력 모집 (대기업 수준 연봉 및 복지)",
-      "company": "(주)시스윈로보틱스",
-      "category": "인국공 사무직",
-      "required_skills": [
-        "자동제어",
-        "전자",
-        "기술지원",
-        "유지보수",
-        "SE(시스템엔지니어)"
-      ],
-      "qualifications": "자동제어, 전자 역량 보유자",
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
       "preferred": "관련 분야 전공 및 자격증 우대",
       "experience_years": 0,
       "deadline": "~ 06/21(일)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54121118&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54118597&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
       "source": "사람인"
     },
     {
-      "id": "saram_인국공 사무직_5",
-      "title": "(주)모나미코스메틱 각 부문 경력•신입사원 모집",
-      "company": "(주)모나미코스메틱",
-      "category": "인국공 사무직",
+      "id": "saram_클라우드 아키텍처_5",
+      "title": "(주)견우푸드 신입/경력 정규직 채용",
+      "company": "(주)견우푸드",
+      "category": "클라우드 아키텍처",
       "required_skills": [
-        "화장품",
-        "손익관리",
-        "사무직",
-        "사무행정",
-        "서류관리"
-      ],
-      "qualifications": "화장품, 손익관리 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "~ 06/18(목)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54102489&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_인국공 사무직_6",
-      "title": "㈜아모텍 2026년 상반기 신입/경력 수시채용",
-      "company": "(주)아모텍",
-      "category": "인국공 사무직",
-      "required_skills": [
-        "기구설계",
-        "전기",
-        "회로설계",
+        "아키텍쳐",
+        "네트워크",
+        "AWS",
         "유지보수",
-        "인프라"
+        "Python"
       ],
-      "qualifications": "기구설계, 전기 역량 보유자",
+      "qualifications": "아키텍쳐, 네트워크 역량 보유자",
       "preferred": "관련 분야 전공 및 자격증 우대",
       "experience_years": 0,
-      "deadline": "~ 06/30(화)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53999283&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
+      "deadline": "~ 06/19(금)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53556550&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
       "source": "사람인"
     },
     {
-      "id": "saram_인국공 사무직_7",
-      "title": "덴티움 국내영업/해외영업/마케팅본부 대규모 채용",
-      "company": "(주)덴티움",
-      "category": "인국공 사무직",
+      "id": "saram_클라우드 아키텍처_6",
+      "title": "[3M] 한국쓰리엠 신입/경력사원 모집 안내",
+      "company": "한국쓰리엠(주)",
+      "category": "클라우드 아키텍처",
       "required_skills": [
-        "치과",
-        "의료기기",
-        "서무",
-        "총무",
-        "기술사업화"
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "네트워크",
+        "솔루션"
       ],
-      "qualifications": "치과, 의료기기 역량 보유자",
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
       "preferred": "관련 분야 전공 및 자격증 우대",
       "experience_years": 0,
-      "deadline": "~ 06/16(화)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54090024&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
+      "deadline": "~ 08/07(금)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54071195&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
       "source": "사람인"
     },
     {
-      "id": "saram_인국공 사무직_8",
-      "title": "[에이텍/판교] 6월 각 부문 신입/경력사원 모집",
-      "company": "(주)에이텍",
-      "category": "인국공 사무직",
+      "id": "saram_클라우드 아키텍처_7",
+      "title": "각 부문별 경력사원 모집",
+      "company": "데상트코리아(주)",
+      "category": "클라우드 아키텍처",
       "required_skills": [
-        "전자",
-        "기술지원",
-        "앱개발",
-        "유지보수",
-        "SI개발"
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "솔루션",
+        "AWS"
       ],
-      "qualifications": "전자, 기술지원 역량 보유자",
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "~ 07/04(토)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54089056&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_클라우드 아키텍처_8",
+      "title": "[대상정보기술] 각 부문별 신입·경력 채용",
+      "company": "대상정보기술(주)",
+      "category": "클라우드 아키텍처",
+      "required_skills": [
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "네트워크",
+        "솔루션"
+      ],
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
+      "preferred": "관련 분야 전공 및 자격증 우대",
+      "experience_years": 0,
+      "deadline": "내일마감",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53263131&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
+      "source": "사람인"
+    },
+    {
+      "id": "saram_클라우드 아키텍처_9",
+      "title": "(주)와치텍 2026년 인재 채용",
+      "company": "(주)와치텍",
+      "category": "클라우드 아키텍처",
+      "required_skills": [
+        "클라우드",
+        "아키텍쳐",
+        "인프라",
+        "네트워크",
+        "솔루션"
+      ],
+      "qualifications": "클라우드, 아키텍쳐 역량 보유자",
       "preferred": "관련 분야 전공 및 자격증 우대",
       "experience_years": 0,
       "deadline": "오늘마감",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=53873316&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_인국공 사무직_9",
-      "title": "[본사] 상반기 각 부문 신입 및 경력 채용",
-      "company": "(주)나우테크",
-      "category": "인국공 사무직",
-      "required_skills": [
-        "기계",
-        "기계설비",
-        "기술지원",
-        "유지보수",
-        "알고리즘"
-      ],
-      "qualifications": "기계, 기계설비 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "~ 06/30(화)",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54090263&location=ts&searchword=%EC%9D%B8%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_한국공 사무직_0",
-      "title": "[한국공교육원] 공공부문 교육 운영 담당자 채용",
-      "company": "(주)한국공교육원",
-      "category": "한국공 사무직",
-      "required_skills": [
-        "교육컨설턴트",
-        "교육운영",
-        "교육콘텐츠기획",
-        "소프트웨어개발"
-      ],
-      "qualifications": "교육컨설턴트, 교육운영 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "채용시",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54104043&location=ts&searchword=%ED%95%9C%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d70e0172-a582-4f67-a14e-6125b2fa3a20",
-      "source": "사람인"
-    },
-    {
-      "id": "saram_한국공 사무직_1",
-      "title": "[한국공교육원] 교육 플랫폼 영업 담당 채용",
-      "company": "(주)한국공교육원",
-      "category": "한국공 사무직",
-      "required_skills": [
-        "영업지원",
-        "영업직",
-        "솔루션기술영업",
-        "시스템영업",
-        "영업전략"
-      ],
-      "qualifications": "영업지원, 영업직 역량 보유자",
-      "preferred": "관련 분야 전공 및 자격증 우대",
-      "experience_years": 0,
-      "deadline": "채용시",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54071577&location=ts&searchword=%ED%95%9C%EA%B5%AD%EA%B3%B5+%EC%82%AC%EB%AC%B4%EC%A7%81&searchType=search&paid_fl=n&search_uuid=d70e0172-a582-4f67-a14e-6125b2fa3a20",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54058368&location=ts&searchword=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98&searchType=search&paid_fl=n&search_uuid=e7affc46-b4de-47ae-b383-c2eb2e50eb44",
       "source": "사람인"
     }
   ]
