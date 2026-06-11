@@ -2,13 +2,13 @@ import streamlit as st
 import os
 from my_agent import run_pipeline
 
-# 13.5 Streamlit 화면 구성 가이드라인 준수
+# Streamlit 화면 구성 가이드라인 준수
 
-st.set_page_config(page_title="커리어 에이전트 - Week 13", layout="wide")
+st.set_page_config(page_title="AI 커리어 매칭 시스템", layout="wide")
 
-st.title("🚀 커리어 매칭 에이전트 (13주차 표준)")
+st.title("🚀 AI 커리어 매칭 및 자소서 코칭 시스템")
 st.markdown("""
-입력 자료를 바탕으로 정보를 추출하고, 맞춤형 가이드 작성 및 검토를 수행합니다.
+사용자의 역량을 분석하여 최적의 채용 공고를 추천하고, 맞춤형 자소서 작성 가이드와 검토 보고서를 제공합니다.
 """)
 
 # 입력 섹션
@@ -28,58 +28,56 @@ if st.button("에이전트 실행"):
         st.success("분석 완료!")
         
         # 결과 화면 출력 (3개 탭으로 구분)
-        tab1, tab2, tab3 = st.tabs(["📊 추출/분류 결과", "📝 맞춤형 안내문", "🔍 검토 보고서"])
+        tab1, tab2, tab3 = st.tabs(["📊 역량 분석 결과", "📝 맞춤형 취업 가이드", "🔍 최종 검토 보고서"])
         
         with tab1:
-            st.markdown("### 12주차 기반 정보 추출")
+            st.markdown("### 사용자 역량 정보 추출 및 분류")
             st.json(profile)
             st.info("파일 저장 위치: output.md")
             
         with tab2:
-            st.markdown("### 최종 사용자 가이드")
+            st.markdown("### 맞춤형 커리어 전략 가이드")
             st.markdown(guides)
             st.info("파일 저장 위치: output_user_guide.md")
             
         with tab3:
-            st.markdown("### 에이전트 검토 결과")
+            st.markdown("### 시스템 최종 품질 검토")
             st.markdown(review)
             st.warning("⚠️ 이 보고서는 AI 검토자의 의견이며 최종 확인은 사용자의 몫입니다.")
             st.info("파일 저장 위치: review_report.md")
 
 # 사이드바 설정
 with st.sidebar:
-    st.header("⚙️ 에이전트 워크플로우")
+    st.header("⚙️ 서비스 프로세스")
     st.info("""
     **결과 도출 과정:**
-    1. **정보 추출**: 입력된 텍스트에서 이름, 경력, 기술 등을 AI가 분석합니다.
-    2. **공고 수집/분류**: 추출된 키워드를 바탕으로 실제 채용 사이트에서 공고를 가져와 직무별로 나눕니다.
-    3. **가이드 작성**: 분석된 데이터로 맞춤형 추천 및 주의사항 안내문을 작성합니다.
-    4. **AI 검토**: 작성된 안내문에 누락된 정보나 잘못된 표현이 없는지 최종 점검합니다.
+    1. **정보 추출**: 입력된 텍스트에서 이름, 경력, 기술 등을 AI가 정밀 분석합니다.
+    2. **공고 수집/분류**: 추출된 키워드를 바탕으로 실시간 채용 공고를 수집하여 직무별로 분류합니다.
+    3. **가이드 작성**: 분석된 데이터로 최적의 추천 공고와 상세 자소서 팁을 생성합니다.
+    4. **AI 검토**: 생성된 모든 내용의 품질과 정합성을 최종 점검합니다.
     """)
     
     st.header("💡 입력 가이드")
     st.markdown("""
     **어떤 내용을 넣어야 하나요?**
-    - 자신의 성함
-    - 실무 경력 (년수)
-    - 보유 중인 기술 스택 (예: Python, Java, Figma)
-    - 관심 있는 직무나 분야
+    - 성함 및 실무 경력
+    - 보유 기술 스택 (예: Python, Java, Figma)
+    - 관심 있는 직무나 산업 분야
     
     **어떻게 입력해야 하나요?**
     - 문장형으로 자유롭게 적으시거나, 항목별로 나열해도 AI가 잘 이해합니다.
     """)
     
-    # API 키 확인 로직 개선
+    # API 키 확인 로직
     has_api_key = False
     if "OPENAI_API_KEY" in st.secrets:
         has_api_key = True
     elif os.path.exists(".env"):
-        # .env 파일 내부에 키가 실제로 정의되어 있는지 확인
         with open(".env", "r") as f:
             if "OPENAI_API_KEY=" in f.read():
                 has_api_key = True
 
     if has_api_key:
-        st.success("✅ API 키 로드됨")
+        st.success("✅ 시스템 정상 작동 중")
     else:
-        st.error("❌ API 키가 없습니다. Secrets 또는 .env 파일을 확인해주세요.")
+        st.error("❌ 설정 오류: API 키가 등록되지 않았습니다.")
