@@ -69,7 +69,17 @@ with st.sidebar:
     - 문장형으로 자유롭게 적으시거나, 항목별로 나열해도 AI가 잘 이해합니다.
     """)
     
-    if os.path.exists(".env"):
+    # API 키 확인 로직 개선
+    has_api_key = False
+    if "OPENAI_API_KEY" in st.secrets:
+        has_api_key = True
+    elif os.path.exists(".env"):
+        # .env 파일 내부에 키가 실제로 정의되어 있는지 확인
+        with open(".env", "r") as f:
+            if "OPENAI_API_KEY=" in f.read():
+                has_api_key = True
+
+    if has_api_key:
         st.success("✅ API 키 로드됨")
     else:
-        st.error("❌ API 키가 없습니다. .env 파일을 확인해주세요.")
+        st.error("❌ API 키가 없습니다. Secrets 또는 .env 파일을 확인해주세요.")
