@@ -1,38 +1,40 @@
 # GEMINI.md
 
-이 저장소의 공통 작업 규칙은 루트의 `AGENTS.md`에 있다.
-
-작업을 시작할 때 먼저 `AGENTS.md`, `context.md`, `todo.md`를 읽고 따른다.
+이 저장소의 공통 작업 규칙은 루트의 `AGENTS.md`에 있다. 작업을 시작할 때 먼저 `AGENTS.md`, `context.md`, `todo.md`를 읽고 따른다.
 
 ## 요약
 
-- 기본 실행 명령은 `python career_agent.py`이다.
-- 입력 파일: `sample_career_profile.json` (사용자 프로필)
-- 출력: `output/` 디렉토리의 4개 Markdown 파일
-- 파일을 수정하기 전에 먼저 계획을 제시한다.
-- 한 번에 많은 파일을 바꾸지 않는다.
-- 외부 패키지는 최소한으로만 사용 (requests, python-dotenv 등만 기본)
-- 실제 API 연동 전까지는 모킹된 데이터로 개발한다.
+- **기본 실행 명령**: `python my_agent.py`
+- **입력 파일**: `sample_input.txt` (사용자 프로필, JSON 형식)
+- **출력 디렉토리**: `output/` 및 루트 디렉토리의 Markdown 파일들
+- **주요 출력 파일**:
+  - `output.md`: 분석된 정보 요약 표
+  - `output_user_guide.md`: 맞춤형 채용 추천 및 자소서 팁
+  - `review_report.md`: 에이전트 자가 검토 보고서
+- **파일 수정 규칙**: 수정 전 계획 제시, 소규모 변경 지향, 외부 패키지 최소화
+- **버전 관리 제외**: `docs/`(강의 자료), `weather/`(연습 폴더)는 `.gitignore`에 등록되어 관리 대상에서 제외됨
 
-## 에이전트 간 데이터 흐름
+## 에이전트 간 데이터 흐름 (5개 에이전트 구조)
 
 ```
-사용자 프로필 (JSON)
+사용자 프로필 (JSON, sample_input.txt)
     ↓
-[정보수집 에이전트] → 채용 공고 수집
+[InformationGatheringAgent] (collector.py) → 실시간 채용 정보 수집 (사람인 크롤링 + 로컬 Fallback)
     ↓
-[역량 분석 에이전트] → 사용자 역량 점수 산출
+[CompetencyAnalysisAgent] (analyzer.py) → 사용자 역량 분석 및 직무 분류
     ↓
-[매칭 전략 에이전트] → 추천 기회 및 적합도
+[MatchingStrategyAgent] (matcher.py) → 규칙 + LLM 기반 적합도 산출 및 매칭
     ↓
-[자소서 코치 에이전트] → 작성 팁 및 피드백
+[CoverLetterCoachAgent] (coach.py) → 맞춤형 자소서 작성 팁 생성
     ↓
-Markdown 출력 (4개 파일)
+[ReviewerAgent] (reviewer.py) → 최종 결과물 품질 및 정합성 검토
+    ↓
+최종 Markdown 출력 (output.md, output_user_guide.md, review_report.md)
 ```
 
-## Gemini 사용 시 팁
+## 개발 및 오류 방지 설정
 
-- 각 에이전트 함수는 독립적으로 테스트 가능하게 작성한다.
-- 에이전트 간 인터페이스는 Python dict/list로 표준화한다.
-- 긴 프롬프트는 `prompts/` 디렉토리에 따로 저장한다.
-- 모킹 데이터는 `sample_data/` 에서 관리한다.
+1. **환경 변수**: `.env` 파일에 `OPENAI_API_KEY` (필수) 및 `GROQ_API_KEY` (선택) 설정 필요.
+2. **의존성**: `pip install -r requirements.txt`로 필요한 패키지(requests, beautifulsoup4, python-dotenv, openai 등) 설치.
+3. **Fallback 메커니즘**: 네트워크 또는 API 오류 발생 시 `sample_data/opportunities.json` 등의 로컬 데이터를 사용하도록 설계됨.
+4. **Git 주의사항**: `docs/` 및 `weather/` 폴더는 로컬 작업용이므로 커밋하지 않도록 주의.
